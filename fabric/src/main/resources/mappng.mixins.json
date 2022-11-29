@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.wallentines.mappng.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AccessorHoldingPlayer",
+    "MixinMapItemSavedData"
+  ],
+  "client": [
+    "MixinMapInstance"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

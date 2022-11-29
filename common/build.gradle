@@ -1,0 +1,24 @@
+repositories {
+
+    maven {
+        url "https://libraries.minecraft.net/"
+    }
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+dependencies {
+
+    compileOnly 'com.mojang:authlib:3.4.40'
+    compileOnly project(":api")
+
+    compileOnly 'org.jetbrains:annotations:23.0.0'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+}
+
+test {
+    useJUnitPlatform()
+}
